@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Time Article",
+    "description": "To compute approx reading time for your bookmarked articles",
+    "version": "1.0",
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "hello.png"
+    },
+    "background": {
+        "service_worker": "service-worker.js",
+        "type": "module"
+    },
+    "permissions": [
+        "bookmarks",
+        "tabs",
+        "activeTab",
+        "scripting"
+    ],
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ]
+}
